@@ -14,7 +14,7 @@ public class Prime {
      public static void main(String[] args){
         int num = 989;
 
-        System.out.println("IS PRIME = "+  isPrime(num)  );
+        System.out.println("IS PRIME =re---- "+  isPrime(num)  );
     }
 
 }
