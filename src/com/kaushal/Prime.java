@@ -1,3 +1,5 @@
+package com.kaushal;
+
 public class Prime {
     static boolean isPrime( int num){
         boolean ans = true;
