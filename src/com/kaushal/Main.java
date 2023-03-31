@@ -4,7 +4,7 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     static boolean isPrime( int num){
-        System.out.println("====="+ num);
+//        System.out.println("====="+ num);
         boolean ans = true;
         if (num <= 2){
             return true;
