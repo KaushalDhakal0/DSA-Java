@@ -2,11 +2,56 @@ package com.kaushal;
 
 public class SwitchCase {
     public static void main(String[] args) {
-        int a = 2;
-        switch (a) {
-            case 1 -> System.out.println("=====>" + a);
-            case 2 -> System.out.println("=====2=>" + a);
-            default -> System.out.println("=====DEFAULT");
+//        int a = 2;
+//        switch (a) {
+//            case 1 -> System.out.println("=====>" + a);
+//            case 2 -> System.out.println("=====2=>" + a);
+//            default -> System.out.println("=====DEFAULT");
+//        }
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            int empID = in.nextInt();
+            String department = in.next();
+
+            switch (empID) {
+                case 1:
+                    System.out.println("Kaushal ");
+                    break;
+                case 2:
+                    System.out.println("Rahul Rana");
+                    break;
+                case 3:
+                    System.out.println("Emp Number 3");
+                    switch (department) {
+                        case "IT":
+                            System.out.println("IT Department");
+                            break;
+                        case "Management":
+                            System.out.println("Management Department");
+                            break;
+                        default:
+                            System.out.println("No department entered");
+                    }
+                    break;
+                default:
+                    System.out.println("Enter correct EmpID");
+            }
+
+            // better way to write
+            switch (empID) {
+                case 1 -> System.out.println("Kaushal ");
+                case 2 -> System.out.println("Rahul Rana");
+                case 3 -> {
+                    System.out.println("Emp Number 3");
+                    switch (department) {
+                        case "IT" -> System.out.println("IT Department");
+                        case "Management" -> System.out.println("Management Department");
+                        default -> System.out.println("No department entered");
+                    }
+                }
+                default -> System.out.println("Enter correct EmpID");
+            }
         }
+
     }
 }
