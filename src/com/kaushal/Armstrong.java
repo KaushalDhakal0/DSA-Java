@@ -6,20 +6,25 @@ import java.util.Scanner;
 
 public class Armstrong {
     public static void main(String[] args) {
-        System.out.println("Please Enter a number");
-        boolean ans = isArmstrong();
-        System.out.println("ANS ===>" + ans);
+//        System.out.println("Please Enter a number");
+//        boolean ans = isArmstrong();
+        System.out.println("Armstrong Numbers are ===>");
+        for (int i = 10; i < 1000; i++) {
+            if(isArmstrong(i)){
+                System.out.println(i);
+            }
+        }
     }
-    static boolean isArmstrong(){
-        Scanner in = new Scanner(System.in);
-        int original = in.nextInt();
-        int num = original;
+    static boolean isArmstrong(int n){
+//        Scanner in = new Scanner(System.in);
+//        int original = in.nextInt();
+        int num = n;
         int ans = 0;
         while (num > 0){
             int rem = num%10;
             num/= 10;
             ans = ans + rem*rem*rem;
         }
-        return ans == original;
+        return ans == n;
     }
 }
