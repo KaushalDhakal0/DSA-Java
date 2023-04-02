@@ -8,12 +8,15 @@ public class ReverseInteger {
 //        Scanner numbs = new Scanner(System.in);
 //        System.out.println("Please enter Number to reverse");
 //        int num = numbs.nextInt();
-        long num = 1534236469;
+        long num = 3646987;
         long ans = 0 ;
         while (num > 0){
             long rem = num % 10;
             num /= 10;
             ans =  ans * 10 + rem;
+        }
+        if (ans > Integer.MIN_VALUE || ans < Integer.MIN_VALUE){
+            System.out.println("OveerFlow!!!!");
         }
         System.out.println("==REVERSED NUMBER===" + ans);
 
