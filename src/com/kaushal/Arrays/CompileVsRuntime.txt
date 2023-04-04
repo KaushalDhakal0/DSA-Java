@@ -1,0 +1,18 @@
+In Java, compilation is the process of translating human-readable code into machine-readable code that can be executed by the computer.
+On the other hand, runtime refers to the period during which the program is executing and performing its intended tasks.
+
+Compile time in Java:
+
+=>Compilation happens before the program is executed, and it is a one-time process.
+=>The compiler checks the syntax of the code and ensures that it is valid Java code.
+=>The compiler also performs type checking, which means that it verifies that the data types used in the code are compatible.
+=>Compilation produces bytecode, which is the machine-readable code that can be executed by the Java Virtual Machine (JVM).
+
+
+Run time in Java:
+=> The program is executed during runtime, which is the period when the program is actually running.
+=> During runtime, the JVM interprets the bytecode and executes the instructions.
+=> The JVM performs runtime checks, such as checking for null pointer exceptions, array index out of bounds, and other types of runtime errors.
+=> During runtime, the program interacts with the computer's resources, such as the memory and the CPU, and performs the tasks it was designed to do.
+In summary, compile time is the period when the program is compiled, and runtime is the period when the program is executed.
+During compile time, the compiler checks the code and produces bytecode. During runtime, the JVM interprets the bytecode and executes the program.
