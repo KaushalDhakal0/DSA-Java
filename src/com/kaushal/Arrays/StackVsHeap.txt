@@ -1,0 +1,14 @@
+In Java, primitive data types are stored on the stack, while non-primitive data types (object types) are stored on the heap.
+
+When a primitive variable is created, its value is stored directly in memory on the stack. When a method is called,
+a new block of memory is created on the stack to store the method's local variables and parameters. When the method returns,
+the block of memory is released and the variables are no longer accessible.
+
+On the other hand, when an object is created, a block of memory is allocated on the heap to store the object's instance variables.
+The reference to the object (which is a non-primitive data type) is stored on the stack as a local variable or parameter.
+ references can point to the same object on the heap, and the object remains in memory until all references to it are released or the program ends.
+
+It's important to note that the stack and heap have different characteristics and limitations.
+The stack has limited size and is used for fast and efficient memory allocation and deallocation.
+The heap, on the other hand, is larger and slower, and is used for dynamic memory allocation and garbage collection.
+Understanding how data types are stored in memory is important for writing efficient and effective Java programs.
