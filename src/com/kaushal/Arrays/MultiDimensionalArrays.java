@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MultiDimensionalArrays {
     public static void main(String[] args) {
-        //For Integer Values
+        For Integer Values
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter value for 2D Array");
         int[][] arr = new int[3][3];
@@ -34,6 +34,19 @@ public class MultiDimensionalArrays {
             for (int j = 0; j < arrStr[i].length; j++) {
                 //arr[i][j] = in.nextInt();
                 System.out.println("index = (i,j) = (" + i + "," + j + ") Value = " + arrStr[i][j] );
+            }
+        }
+        multiDArr();
+    }
+    static void multiDArr(){
+        char[][][] threeDArray = new char[3][3][3];
+        int[][][] threeDArrayInt = new int[3][3][3];
+        String[][][] threeDArrayString = new String[3][3][3];
+        for (int i = 0; i < threeDArray.length; i++) {
+            for (int j = 0; j < threeDArray[i].length; j++) {
+                for (int k = 0; k < threeDArray[i][j].length; k++) {
+                    System.out.println(threeDArray[i][j][k]);
+                }
             }
         }
     }
