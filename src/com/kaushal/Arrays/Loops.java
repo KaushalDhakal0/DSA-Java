@@ -23,6 +23,13 @@ public class Loops {
 
 // foreach loop
         int[] numbers = {1, 2, 3, 4, 5};
+        String[] names = {"Kamal", "Bigyan", "Arnlod"};
+        System.out.println("For Each Loop In Action");
+        for (String val: names
+             ) {
+            System.out.println(val);
+
+        }
         for (int number : numbers) {
             System.out.println("For Each " +number);
         }

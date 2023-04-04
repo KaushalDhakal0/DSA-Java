@@ -13,6 +13,7 @@ public class ArrayListsExample {
         System.out.println("ArrayList = " + intList);
         intList.remove(0);
         System.out.println("After Removing ArrayList = " + intList);
+        System.out.println("After Removing ArrayList Length = " + intList.size());
 
         //    String Array List
         ArrayList<String> arrStringList =  new ArrayList<String>();
