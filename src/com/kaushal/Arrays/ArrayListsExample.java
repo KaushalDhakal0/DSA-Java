@@ -29,5 +29,6 @@ public class ArrayListsExample {
         System.out.println("After removing string array list + " + arrStringList);
         // get value by index value.
         System.out.println(arrStringList.get(2));
+        System.out.println("Length = " + arrStringList.size());
     }
 }
