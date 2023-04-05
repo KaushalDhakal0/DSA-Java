@@ -18,10 +18,10 @@ public class Questions {
        int ans = findAns(nums);
         System.out.println("Ans == " + ans);
 
-        //Second Approach
+        //Second Approach(Best Approach)
         int finalCount = 0 ;
         for (int i = 0; i < nums.length; i++) {
-            int length = count(nums[i]);
+            int length = countNofDigits(nums[i]);
             if (isEven(length)){
                 finalCount ++ ;
             }
@@ -31,6 +31,7 @@ public class Questions {
     private static boolean isEven(int num){
         return num % 2 == 0;
     }
+
 
     private static int findAns(int[] numsz) {
         //If ans can be found without converting data types, it is better to not convert data type.
@@ -57,5 +58,12 @@ public class Questions {
             ans /= 10;
         }
         return count;
+    }
+
+    private static int  countNofDigits ( int num){
+        if (num < 0){
+            num = num * -1;
+        }
+        return (int)Math.log10(num) + 1;
     }
 }
