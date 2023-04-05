@@ -17,9 +17,23 @@ public class Questions {
        int[] nums = {12,345,2,6345,7896,23,43,4};
        int ans = findAns(nums);
         System.out.println("Ans == " + ans);
+
+        //Second Approach
+        int finalCount = 0 ;
+        for (int i = 0; i < nums.length; i++) {
+            int length = count(nums[i]);
+            if (isEven(length)){
+                finalCount ++ ;
+            }
+        }
+        System.out.println("final Ans = " + finalCount);
+    }
+    private static boolean isEven(int num){
+        return num % 2 == 0;
     }
 
     private static int findAns(int[] numsz) {
+        //If ans can be found without converting data types, it is better to not convert data type.
         if (numsz.length == 0 ){
             return -1;
         }
@@ -32,6 +46,15 @@ public class Questions {
                 count ++;
             }
 
+        }
+        return count;
+    }
+
+    private static int count(int ans){
+        int count = 0;
+        while (ans > 0){
+            count ++;
+            ans /= 10;
         }
         return count;
     }
