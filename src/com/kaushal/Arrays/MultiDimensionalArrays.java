@@ -44,7 +44,7 @@ public class MultiDimensionalArrays {
         int[][][] threeDArrayInt = new int[3][3][3];
 
         int[][][] copied3DArray = Arrays.copyOf(threeDArrayInt, threeDArrayInt.length);
-        //Arrays.copyOf(arr,length) is designed only for One dimensional Array. For MultiDimensional Arrays use Arrays.deepToString(Array);
+        //Arrays.toString(arr,length) is designed only for One dimensional Array. For MultiDimensional Arrays use Arrays.deepToString(Array);
         System.out.println("Copied 3D Arrays :: " + Arrays.deepToString(copied3DArray));
         String[][][] threeDArrayString = new String[3][3][3];
         for (int i = 0; i < threeDArray.length; i++) {
