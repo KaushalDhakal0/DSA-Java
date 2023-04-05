@@ -13,7 +13,7 @@ public class LinearSearchAlgorithm {
         String check2 = "test";
         boolean ans = checkIfExistStr(names, check);
         boolean ans2 = checkIfExistStr(names, check2);
-        System.out.println("String Ans Exist One " + ans);
+        System.out.println("Int Ans Exist One " + ans);
         System.out.println("String Ans Exist Two " + ans2);
 
 
