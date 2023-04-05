@@ -1,0 +1,21 @@
+String s1 = "hello";
+String s2 = new String("hello");
+String s3 = "hello";
+
+System.out.println(s1 == s2); // false
+System.out.println(s1 == s3); // true
+
+System.out.println(s1.equals(s2)); // true
+System.out.println(s1.equals(s3)); // true
+
+The difference between String s1 = "hello"; and String s2 = new String("hello"); is the way the strings are created and stored in memory.
+
+In the first case, a string literal "hello" is used to create the string object.
+String literals are stored in a special area of memory called the string constant pool, which is a part of the heap memory.
+When you use a string literal to create a string object, the JVM checks if an object with the same value already exists in the string constant pool.
+If it does, then the existing object is reused instead of creating a new one. This is known as string interning.
+
+In the second case, a new string object is explicitly created using the new keyword.
+When you use new to create a string object, a new object is created in the heap memory,
+regardless of whether an object with the same value already exists in the string constant pool or not.
+This means that if you create multiple string objects using new, each object will have a separate memory location, even if they have the same value.
