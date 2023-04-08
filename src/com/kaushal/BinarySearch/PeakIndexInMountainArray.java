@@ -17,7 +17,7 @@ public class PeakIndexInMountainArray {
                     //This implies we are in the descending part of array
                     end = mid;
                 }else {
-                    // We are in ascending part.
+                    // We are in ascending part of Array.
                     start = mid + 1;
                 }
         }
