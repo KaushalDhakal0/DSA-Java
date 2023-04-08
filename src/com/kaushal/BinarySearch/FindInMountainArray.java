@@ -1,16 +1,23 @@
 package com.kaushal.BinarySearch;
+
+import static java.lang.Math.*;
+
 //1095. Find in Mountain Array\
 //Given a mountain array mountainArr,
 //return the minimum index such that mountainArr.get(index) == target. If such an index does not exist, return -1.
 public class FindInMountainArray {
     public static void main(String[] args) {
-        int [] arr = {1,2,3,4,5,6,7,8,9,19,100,5,4,3,1};
-        int target = 3;
+        int [] arr = {1,2,3,4,5,6,100,5,4,3,2,1};
+        int target = 100;
         int ans = findPeakValIndex(arr, target);
         int leftBoundary = binarySearch(arr, target, 0 , ans);
-        int rightBoundary = binarySearch(arr,target,ans+1, arr.length);
-        System.out.println("Min Index = " + Math.min(leftBoundary,rightBoundary));
-        System.out.println("Left = "+ leftBoundary + " val = "+ arr[leftBoundary] + "Right = " + rightBoundary + " Val = " + arr[rightBoundary]);
+        if (leftBoundary != -1){
+            System.out.println("Ans = : "+ leftBoundary);
+        }
+
+        int rightBoundary = binarySearch(arr,target,ans+1, arr.length - 1);
+        System.out.println("Ans :: Right Boundary =" + rightBoundary);
+
     }
 
     private static int findPeakValIndex(int[] arr, int target) {
@@ -34,14 +41,24 @@ public class FindInMountainArray {
     }
     private static int binarySearch(int[] arr, int target, int start, int end){
         int mid;
+        boolean is_ascending = arr[start] < arr[end];
         while (start <= end){
             mid = start + (end - start)/2;
             if (arr[mid] == target){
                 return mid;
-            } else if (arr[mid] > target) {
-                end = mid -1;
+            }
+            if (is_ascending){
+                 if (arr[mid] > target) {
+                    end = mid -1;
+                }else {
+                    start = mid + 1;
+                }
             }else {
-                start = mid + 1;
+                 if (arr[mid] < target) {
+                    end = mid -1;
+                }else {
+                    start = mid + 1;
+                }
             }
         }
         return -1;
