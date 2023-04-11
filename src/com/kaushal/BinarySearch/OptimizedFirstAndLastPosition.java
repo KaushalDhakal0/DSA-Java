@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class OptimizedFirstAndLastPosition {
     public static void main(String[] args) {
         int[] arr = {5, 7, 7, 8, 8, 10};
-        int target = 104;
+        int target = 5;
         int[] ans = {-1, -1};
         int leftBoundary = findLeftBoundary(arr, target);
         int rightBoundary = findRightBoundary(arr, target);
@@ -36,7 +36,7 @@ public class OptimizedFirstAndLastPosition {
 
     }
 
-    private static int findLeftBoundary(int[] arr, int target) {
+    public static int findLeftBoundary(int[] arr, int target) {
         int leftBoundary = -1;
         int left = 0;
         int right = arr.length - 1;
