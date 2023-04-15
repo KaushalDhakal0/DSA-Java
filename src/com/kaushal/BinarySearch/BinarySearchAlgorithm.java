@@ -19,7 +19,7 @@ public class BinarySearchAlgorithm {
         int left = 0;
         int right = numbs.length - 1;
         while (left < right){
-            int mid = (left + right)/2;
+            int mid = left + (right - left)/2;
             if (numbs[mid] == target){
                 return mid;
             }

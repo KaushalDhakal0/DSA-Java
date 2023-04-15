@@ -32,7 +32,6 @@ public class FindLeftOccuranceAndRight {
         int right = arr.length - 1;
         int mid;
         while (left <= right){
-
             if (order){
                 mid = left + (right - left)/2;
                 if (arr[mid] == target){
@@ -71,7 +70,6 @@ public class FindLeftOccuranceAndRight {
                 return -1;
             }
         }
-
         int leftIdx = -1;
         int left = 0;
         int right = arr.length - 1;
