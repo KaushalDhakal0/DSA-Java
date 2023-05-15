@@ -5,32 +5,27 @@ import java.util.Arrays;
 public class Bubble {
     public static void main(String[] args) {
         int[] arr = {12,32, 1999,2,9,79,8,5,3,9,79,99,0};
-        // int[] arr = {1,2,3,4,5,6,7,8};
-       // bubbleSort(arr);
         selectionSort(arr);
         System.out.println(" After Sorting : " + Arrays.toString(arr));
     }
 
     private static void selectionSort(int[] arr) {
+        //This code finds the minimum element in the array and swaps with the first unsorted Index.
         int point = 0;
-
         for (int i = 0; i < arr.length - 1; i++) {
-
             int min = Integer.MAX_VALUE;
             int swap = point;
-            for (int j = point ; j < arr.length - 1;j++){
+            for (int j = point ; j <= arr.length - 1; j++){
                 if (arr[j] < min){
                     min = arr[j];
                     swap = j;
                 }
             }
-
             int temp = arr[point];
             arr[point] = min;
             arr[swap] = temp;
             point++;
         }
-
     }
 
     private static void bubbleSort(int[] arr) {
