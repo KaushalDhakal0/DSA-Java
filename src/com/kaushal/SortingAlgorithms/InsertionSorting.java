@@ -2,6 +2,8 @@ package com.kaushal.SortingAlgorithms;
 
 import java.util.Arrays;
 
+
+// Works best if inputs are Partially sorted and relatively of small lengths.
 public class InsertionSorting {
     public static void main(String[] args) {
         int [] unsortedArray = {12,4,3,65,76,6};
@@ -9,6 +11,9 @@ public class InsertionSorting {
         System.out.println("Sorted Array : (Insertion Sorting) ==>" + Arrays.toString(unsortedArray));
 
     }
+
+
+
     private static void insertionSort(int[] unsortedArray) {
         int n = unsortedArray.length;
         for (int i = 0; i <= n - 2; i++) {
@@ -18,8 +23,9 @@ public class InsertionSorting {
                 }else {
                     break;
                 }
-
             }
+            System.out.println("Each iteration " + Arrays.toString(unsortedArray));
+
         }
     }
     private static void swap(int[] unsortedArray, int j) {
