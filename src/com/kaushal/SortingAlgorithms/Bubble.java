@@ -11,6 +11,7 @@ public class Bubble {
 
     private static void selectionSort(int[] arr) {
         //This code finds the minimum element in the array and swaps with the first unsorted Index.
+
         int point = 0;
         for (int i = 0; i < arr.length - 1; i++) {
             int min = Integer.MAX_VALUE;
