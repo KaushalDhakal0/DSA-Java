@@ -5,7 +5,7 @@ import java.util.Arrays;
 // In order to apply Cyclic Sort One array must contain values from [1......to N]
 public class CycleSorting {
     public static void main(String[] args) {
-        int [] unsortedArray = {3,5,2,1,4};
+        int [] unsortedArray = {1,3,5,2,4};
         cycleSort(unsortedArray);
         System.out.println("Sorted Array : (Cycle Sort) ==>" + Arrays.toString(unsortedArray));
     }
