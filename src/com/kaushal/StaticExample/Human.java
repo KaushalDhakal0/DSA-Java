@@ -1,7 +1,7 @@
 package com.kaushal.StaticExample;
 
 public class Human {
-    static String name;
+    static  String name;
     String maritalStatus;
     int age;
     int salary;
