@@ -6,7 +6,7 @@ public class Human {
     int age;
     int salary;
     public Human( String name,int age,int salary,String maritalStatus){
-        this.name = name;
+        Human.name = name;
         this.age = age;
         this.salary = salary;
         this.maritalStatus = maritalStatus;
