@@ -1,4 +1,4 @@
-package com.kaushal;
+package com.kaushal.RandomQuestions;
 
 public class Conditionals {
     public  static  void main(String [] args){

@@ -1,4 +1,4 @@
-package com.kaushal;
+package com.kaushal.RandomQuestions;
 
 public class Prime {
     static boolean isPrime( int num){

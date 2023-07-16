@@ -1,4 +1,4 @@
-package com.kaushal;
+package com.kaushal.RandomQuestions;
 
 public class Strings {
     public  static  void main(String [] args){

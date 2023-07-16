@@ -36,6 +36,7 @@ class Circle extends Shape {
 }
 public class Main {
     public static void main(String[] args) {
+        //Shape must be referenced not Circle for abstraction
         Shape shape = new Circle("red", 55);
         shape.draw(); // Output: Drawing a circle.
         System.out.println(shape.getColor());

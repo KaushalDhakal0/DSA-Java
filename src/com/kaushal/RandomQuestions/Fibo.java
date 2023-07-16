@@ -1,4 +1,4 @@
-package com.kaushal;
+package com.kaushal.RandomQuestions;
 
 public class Fibo {
     public static void main(String [] args){

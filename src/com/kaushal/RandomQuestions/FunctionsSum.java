@@ -1,4 +1,4 @@
-package com.kaushal;
+package com.kaushal.RandomQuestions;
 
 import java.util.Scanner;
 
