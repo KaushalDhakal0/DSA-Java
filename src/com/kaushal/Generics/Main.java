@@ -11,6 +11,9 @@ public class Main {
         numbers.add(10);
         numbers.add(11);
         numbers.add(12);
+        numbers.add(11);
+        numbers.add(12);
+        numbers.add(909);
         System.out.println("=====" + Arrays.toString(numbers.getData()) );
         System.out.println("=====" + numbers.getSize() );
 

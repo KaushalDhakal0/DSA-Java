@@ -18,8 +18,7 @@ public class CustomArrayList {
      }
 
     private void resizeArr() {
-        DEFAULT_SIZE = size * 2;
-        int temp[] = new int[DEFAULT_SIZE];
+        int temp[] = new int[size * 2];
         for (int i = 0; i < data.length; i++) {
             temp[i] = data[i];
         }
@@ -27,7 +26,7 @@ public class CustomArrayList {
     }
 
     private boolean isFull() {
-        return this.size  == DEFAULT_SIZE;
+        return this.size  == data.length;
     }
 
     public int getSize(){

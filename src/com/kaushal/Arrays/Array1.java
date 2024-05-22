@@ -17,8 +17,7 @@ public class Array1 {
 
         //Using Loops
         for (int i = 0; i < listArr.length; i++) {
-            System.out.println(strArray[i] + " str");
-            System.out.println(listArr[i] + " ");
+            System.out.println(listArr[i]);
         }
     }
 }
